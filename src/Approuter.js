@@ -6,7 +6,7 @@ import './components/styles.css';
 
 const Approuter = () => {
     return (
-        <HashRouter basename="/">
+        <HashRouter basename="/quiz-react-app">
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/quiz" element={<QuizApp />} />
