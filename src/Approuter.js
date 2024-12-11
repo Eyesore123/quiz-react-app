@@ -1,13 +1,13 @@
 import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import LandingPage from './components/LandingPage'; // Import your LandingPage component
-import QuizApp from './components/App'; // Import your QuizApp component
+import LandingPage from './components/LandingPage';
+import QuizApp from './components/App';
 import './components/styles.css';
 
 const Approuter = () => {
     return (
-        <HashRouter>  {/* Use BrowserRouter to wrap all routes */}
-            <Routes>  {/* Routes wrapper for the individual routes */}
+        <HashRouter basename="/quiz-react-app">
+            <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/quiz" element={<QuizApp />} />
             </Routes>
