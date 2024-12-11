@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './styles.css';
 import kierkegaard from '../images/kierkegaard.jpg';
 import heraclitus from '../images/heraclitus.jpg';
 import protagoras from '../images/protagoras.jpg';

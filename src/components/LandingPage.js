@@ -1,6 +1,7 @@
 import React from 'react';
 import philosopherImg from '../images/Epictetus-1.jpg';
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 
 const LandingPage = () => {
@@ -26,15 +27,16 @@ const LandingPage = () => {
       />
 
       {/* Start Quiz Button */}
-      <button 
-        className="btn btn-success" 
-        onClick={() => window.location.href = '/quiz'}
-        style={{
-          zIndex: 1, // Ensures button is above the background
-        }}
-      >
-        Start Quiz
-      </button>
+      <Link to="/quiz">
+  <button 
+    className="btn btn-success" 
+    style={{
+      zIndex: 1, // Ensures button is above the background
+    }}
+  >
+    Start Quiz
+  </button>
+</Link>
     </div>
   );
 };
