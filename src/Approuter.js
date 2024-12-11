@@ -16,3 +16,14 @@ const Approuter = () => {
 };
 
 export default Approuter;
+
+// If you use browser router, change to BrowserRouter, remove link import from app.js and put this to app.js:
+    // <button 
+    // className="btn btn-success" 
+    // onClick={() => window.location.href = '/quiz'}
+    // style={{
+    //     zIndex: 1, // Ensures button is above the background
+    // }}
+    // >
+    // Start Quiz
+    // </button>
