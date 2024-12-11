@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/quiz-react-app/static/css/main.5c84e98f.css",
-    "main.js": "/quiz-react-app/static/js/main.bb0a8892.js",
+    "main.js": "/quiz-react-app/static/js/main.7c57d542.js",
     "static/media/philosophers.jpg": "/quiz-react-app/static/media/philosophers.36ba4ecb2b154f810f52.jpg",
     "static/media/epicurus.jpg": "/quiz-react-app/static/media/epicurus.46bb0bccd769e4e2daef.jpg",
     "static/media/kierkegaard.jpg": "/quiz-react-app/static/media/kierkegaard.3dc33a6f3a406e54352d.jpg",
@@ -15,10 +15,10 @@
     "static/media/heraclitus.jpg": "/quiz-react-app/static/media/heraclitus.a0d21dcc9239e3505234.jpg",
     "index.html": "/quiz-react-app/index.html",
     "main.5c84e98f.css.map": "/quiz-react-app/static/css/main.5c84e98f.css.map",
-    "main.bb0a8892.js.map": "/quiz-react-app/static/js/main.bb0a8892.js.map"
+    "main.7c57d542.js.map": "/quiz-react-app/static/js/main.7c57d542.js.map"
   },
   "entrypoints": [
     "static/css/main.5c84e98f.css",
-    "static/js/main.bb0a8892.js"
+    "static/js/main.7c57d542.js"
   ]
 }
