@@ -6,3 +6,6 @@
 
 * It stores the states so user can go back to previous questions, but there are still some issues with how answer values are stored.
 
+# Issues
+
+* Images load slowly so I need to add logic to handle images better
