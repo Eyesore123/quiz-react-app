@@ -10,7 +10,6 @@ import schopenhauer from '../images/schopenhauer.jpg';
 import nietzsche from '../images/nietzsche.jpg';
 import james from '../images/james.jpg';
 
-
 const questions = [
   {
     question: 1,
@@ -94,9 +93,17 @@ const questions = [
   }
 ];
 
+const preloadImages = (images) => {
+  images.forEach(image => {
+    const img = new Image();
+    img.src = image;
+  })
+}
+
 const QuizApp = () => {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
-  const [answers, setAnswers] = useState([]); // User answers
+  const [answers, setAnswers] = useState([]);
   const [score, setScore] = useState(0);
   const [showResults, setShowResults] = useState(false);
   const [showExplanation, setShowExplanation] = useState(false);
@@ -109,11 +116,30 @@ const QuizApp = () => {
     answers.forEach((answer, index) => {
       if (answer === questions[index].correctAnswer) {
         newScore += 1;
-        console.log(newScore);
+        // For tracking score:
+        // console.log(newScore);
       }
     });
     setScore(newScore);
   }, [answers]);
+
+    // Preload philosopher images
+  useEffect(() => {
+    const philosopherImages = [
+      kierkegaard,
+      heraclitus,
+      protagoras,
+      sartre,
+      aristotle,
+      epicurus,
+      schopenhauer,
+      nietzsche,
+      james
+    ];
+
+    preloadImages(philosopherImages);
+    setImagesLoaded(true);
+  }, []);
 
   // Handle answer selection
   const handleAnswerSelection = (e) => {
@@ -128,11 +154,11 @@ const QuizApp = () => {
   const handleNextStep = () => {
     if (answered) {
       if (!showExplanation) {
-        setShowExplanation(true); // Show the explanation
+        setShowExplanation(true); // Explanation
       } else {
         if (currentStep < questions.length - 1) {
           setCurrentStep(currentStep + 1);
-          setAnswered(false); // Reset the answered state
+          setAnswered(false); // Reset
           setShowExplanation(false); // Hide the explanation for the next question
         } else {
           setShowResults(true);
