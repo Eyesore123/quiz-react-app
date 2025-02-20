@@ -1,11 +1,9 @@
 # Philosopher quiz
 
-* This is a quiz about the famous quotes from well-known philosophers. 
+* This is a quiz about famous quotes from well-known philosophers. 
 
-* In this project I turned my previous quiz that was made with vanilla JavaScript into a React app version.
+* I turned my previous quiz that was made with vanilla JavaScript into a React app version.
 
-* It stores the states so user can go back to previous questions, but there are still some issues with how answer values are stored.
+* It stores the states of users' answers so the user can go back to previous questions, but there are still some issues with how answer values are stored.
 
-# Issues
-
-* Images load slowly so I need to add logic to handle images better
+* Master branch contains the latest source files. Gh-pages branch is used for static deployment.
